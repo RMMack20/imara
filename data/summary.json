@@ -1,0 +1,127 @@
+{
+ "release": 54,
+ "published_on": "2026-10-28",
+ "headline": {
+  "papers": 1193,
+  "patient_reports": 140345,
+  "unique_patients_provisional": 120168,
+  "countries": 43,
+  "countries_who_african_region": 37,
+  "diseases": 8,
+  "registry_papers": 59,
+  "registry_patient_reports": 214657
+ },
+ "headline_rule": "the eight diseases (DLBCL from its current release); each paper and each paper's patients counted once across diseases; case reports, reads with nothing extracted and possible off-topic reads set apart; unique patients after cohort families within each disease (rule 4), an estimate; population registries apart; countries by ISO code (all of Africa), the WHO African Region as a subset",
+ "diseases": [
+  {
+   "id": "dlbcl",
+   "name": "Diffuse large B-cell lymphoma",
+   "papers": 147,
+   "patient_reports": 8668,
+   "unique_patients": 6110,
+   "countries": 23
+  },
+  {
+   "id": "burkitt",
+   "name": "Burkitt lymphoma",
+   "papers": 254,
+   "patient_reports": 26078,
+   "unique_patients": 20267,
+   "countries": 32
+  },
+  {
+   "id": "hodgkin",
+   "name": "Hodgkin lymphoma",
+   "papers": 209,
+   "patient_reports": 12109,
+   "unique_patients": 10525,
+   "countries": 34
+  },
+  {
+   "id": "pel_pbl",
+   "name": "Plasmablastic and primary effusion lymphoma",
+   "papers": 16,
+   "patient_reports": 558,
+   "unique_patients": 544,
+   "countries": 5
+  },
+  {
+   "id": "tnk",
+   "name": "T- and NK-cell lymphoma",
+   "papers": 39,
+   "patient_reports": 694,
+   "unique_patients": 694,
+   "countries": 25
+  },
+  {
+   "id": "myeloma",
+   "name": "Myeloma and plasma-cell disease",
+   "papers": 137,
+   "patient_reports": 10532,
+   "unique_patients": 10032,
+   "countries": 28
+  },
+  {
+   "id": "lymphoma_other",
+   "name": "Other and unspecified lymphoma",
+   "papers": 473,
+   "patient_reports": 45235,
+   "unique_patients": 40744,
+   "countries": 42
+  },
+  {
+   "id": "leukaemia",
+   "name": "Leukaemia",
+   "papers": 547,
+   "patient_reports": 62473,
+   "unique_patients": 58504,
+   "countries": 40
+  }
+ ],
+ "survival_all_patients": {
+  "patients": 11137,
+  "papers": 92,
+  "survival_at": {
+   "12": 70.61,
+   "24": 61.84,
+   "60": 51.11
+  }
+ },
+ "hiv_comparison": {
+  "all": {
+   "papers": 15,
+   "patients": 1694,
+   "within_papers": {
+    "hr": 1.402,
+    "hr_lo": 1.193,
+    "hr_hi": 1.649,
+    "logrank_p": 3.17e-05,
+    "observed_hiv_pos": 408,
+    "expected_hiv_pos": 359.0
+   },
+   "sentences": {
+    "by_time": "The excess is in the first year: hazard ratio 1.56 (1.28–1.91) in months 0–12 and 1.14 (0.86–1.51) after.",
+    "random_effects": "The papers' own ratios pooled by random effects give 1.35 (1.09–1.66), I² 32 %.",
+    "leave_one_out": "Leaving out one paper at a time, the hazard ratio stays between 1.33 and 1.46, every log-rank P at most 0.001."
+   }
+  },
+  "dlbcl": {
+   "papers": 5,
+   "patients": 711,
+   "within_papers": {
+    "hr": 1.329,
+    "hr_lo": 1.041,
+    "hr_hi": 1.696,
+    "logrank_p": 0.021,
+    "observed_hiv_pos": 180,
+    "expected_hiv_pos": 162.0
+   },
+   "sentences": {
+    "by_time": "Hazard ratio 1.12 (0.81–1.57) in months 0–12 and 1.63 (1.13–2.34) after.",
+    "random_effects": "The papers' own ratios pooled by random effects give 1.31 (0.97–1.77), I² 22 %.",
+    "rests_on_one_paper": "Rests on one paper (SLD-P060, 57 % of the HIV+ deaths): without it 1.14 (0.86–1.52), P 0.362."
+   }
+  }
+ },
+ "checked_by_person": false
+}
